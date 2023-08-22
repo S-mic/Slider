@@ -1,5 +1,13 @@
-let imgVar = document.getElementById('Image');
-let imageArray = ['images/main pic', 'images/pic 1', 'images/pic 2', 'images/pic 3', 'images/pic 5', 'images/pic 6', 'images/pic 7', 'images/pic 4'];
+let imgVar = document.getElementById('image');
+let imageArray = [
+    'images/main pic.jpg',
+    'images/pic 4.jpg',
+    'images/pic 2.jpg',
+    'images/pic 3.jpg',
+    'images/pic 5.jpg',
+    'images/pic 6.jpg',
+    'images/pic 7.jpg'
+];
 
 let imageIndex = 0;
 
@@ -8,8 +16,9 @@ function slideShow() {
     imageIndex++;
 
 
-    if (imageArray >= imageArray.length) {
+    if (imageIndex >= imageArray.length) {
         imageIndex = 0
     }
-} 
-setInterval(slideShow, 3000);
+}
+
+setInterval(slideShow, 1000);
