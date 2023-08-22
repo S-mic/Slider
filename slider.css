@@ -1,0 +1,6 @@
+
+/* if referencing a class us the (.) if referencing a id us (#)*/
+.img{
+float: left;
+background-size: cover;
+}
